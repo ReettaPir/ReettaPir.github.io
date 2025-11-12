@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Order Pizza</title>
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Header section-->
+    <header>
+      <h1 style="text-align: center">For delicious pizza - order here!</h1>
+      <!--Logo image-->
+      <img
+        src="pizza_logo.jpg"
+        alt="logo"
+        width="100"
+        height="100"
+        style="margin-left: 3%"
+      />
+    </header>
+
+    <!--Navigation section-->
+    <nav
+      aria-label="Navigation"
+      style="background-color: bisque; text-align: center"
+    >
+      <h2>Navigation</h2>
+      <a href="#order">Order form</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <br />
+    <!--Order form section-->
+    <section
+      id="order"
+      aria-label="Order form"
+      style="background-color: bisque"
+    >
+      <br />
+      <h2 style="margin-left: 3%">Order form</h2>
+      <!--Start of form-->
+      <article style="margin-left: 3%">
+        <form
+          action="order"
+          method="POST"
+          autocomplete="on"
+          aria-label="pizza order form"
+        >
+          <!--Customer information section-->
+          <!--input type text - name-->
+          <h4>Name</h4>
+          <input
+            type="text"
+            name="full_name"
+            placeholder="Name"
+            required
+            minlength="1"
+            maxlength="30"
+            pattern="[A-Za-z]+"
+            autocomplete="name"
+          />
+          <br />
+          <br />
+          <!--input type text - email-->
+          <h4>Email address</h4>
+          <input
+            type="text"
+            name="email"
+            placeholder="pizza@delicious.com"
+            pattern=""
+            required
+            autocomplete="email"
+          />
+          <br />
+          <br />
+          <!--input type password - psw-->
+          <h4>Add a password for safe delevery!</h4>
+          <input
+            type="password"
+            name="psw"
+            placeholder="Password (optional)"
+            minlength="2"
+            maxlength="10"
+          />
+          <br />
+          <br />
+          <!--Order section-->
+          <h4>Choose your pizza!</h4>
+          <input type="number" name="pizza_amount" min="1" max="9" required />
+          <select name="pizza_type" id="pizza">
+            <option value="cheese">Original Cheese Pizza</option>
+            <option value="cheese">Pepperoni Pizza</option>
+            <option value="cheese">Hawaiian Pizza</option>
+          </select>
+          <p>For orders of 10 or more pizzas, contact us by phone!</p>
+          <br />
+          <!--range - pizza size-->
+          <h3>Customise to your liking!</h3>
+          <h4 aria-label="Pizza size">Size</h4>
+          <input
+            type="range"
+            name="size"
+            id="size"
+            min="0"
+            max="3"
+            class="slider"
+          />
+          <p style="color: rgb(166, 85, 8)">
+            Small -- Medium ---- Large -- Extra Large
+          </p>
+          <!--input type radio - crust-->
+          <h4 aria-label="Crust type">Crust type</h4>
+          <input
+            type="radio"
+            id="normal"
+            name="crust_type"
+            value="normal"
+            required
+          />
+          <label for="normal">Normal</label>
+          <br />
+          <input
+            type="radio"
+            id="stuffed"
+            name="crust_type"
+            value="stuffed"
+            required
+          />
+          <label for="stuffed">Stuffed</label>
+          <br />
+          <input
+            type="radio"
+            id="thin"
+            name="crust_type"
+            value="thin"
+            required
+          />
+          <label for="thin">Thin</label>
+          <br />
+          <input
+            type="radio"
+            id="extra_thick"
+            name="crust_type"
+            value="extra_thick"
+            required
+          />
+          <label for="extra_thick">Extra thick</label>
+          <!--input type checkbox - extra toppings-->
+          <h4 aria-label="Extra toppings">Extra toppings</h4>
+          <input type="checkbox" id="extra_cheese" name="extra_cheese" />
+          <label for="extra_cheese">Extra cheese</label>
+          <br />
+          <input type="checkbox" id="extra_meat" name="extra_meat" />
+          <label for="extra_meat">Extra meat</label>
+          <br />
+          <input type="checkbox" id="jalapeno" name="jalapeno" />
+          <label for="jalapeno">Jalapeno</label>
+          <br />
+          <input type="checkbox" id="extra_veggies" name="extra_veggies" />
+          <label for="extra_veggies">Extra veggies</label>
+
+          <!--input type datalist - side menu-->
+          <h4 aria-label="Side menu">Side menu</h4>
+          <label for="s_item">Choose additional side items!</label>
+          <br />
+          <input list="s_item" />
+          <datalist id="s_item">
+            <option value="Green salad"></option>
+            <option value="Potato fries"></option>
+            <option value="Chicken tenders"></option>
+            <option value="Soda"></option>
+          </datalist>
+          <br />
+          <br />
+          <!--input type textarea - special instructions-->
+          <h4 aria-label="For Special Instructions">
+            For Special Instructions
+          </h4>
+          <textarea
+            name="special_instructions"
+            id="special_instructions"
+            rows="5"
+            cols="40"
+            placeholder="Add special instructions for kitchen and delivery staff."
+          ></textarea>
+          <!-- Disabled & Readonly examples -->
+          <h4 aria-label="Payment method">Payment Method (readonly)</h4>
+          <input type="text" value="Card payment only" readonly />
+
+          <h4 aria-label="Coupons">Coupon codes (disabled)</h4>
+          <input type="text" value="Coming soon" disabled />
+          <br />
+          <br />
+          <!--input type submit - order button-->
+          <input type="submit" value="Order" aria-label="Order" />
+          <br />
+          <br />
+        </form>
+        <!--End of form-->
+      </article>
+    </section>
+    <aside>
+      <blockquote style="margin-left: 3%">
+        <em>"I'm a pizzaterian."</em> - a wise man
+      </blockquote>
+      <br />
+      <embed src="pizza_floating.gif" height="200" width="250" />
+    </aside>
+    <br />
+    <footer id="contact" style="background-color: bisque">
+      <section style="margin-left: 3%">
+        <br />
+        <h2>Contact us!</h2>
+        <p>2600 Pizzaway Ave, Slayton Minnesota</p>
+        <p>phone : 091224-welovepizza</p>
+        <br />
+      </section>
+    </footer>
+  </body>
+</html>

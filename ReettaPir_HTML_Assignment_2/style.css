@@ -1,0 +1,20 @@
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 200px;
+  height: 8px;
+  background: #fad997;
+  outline: none;
+  margin: 20px 0;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: url("pizza_slider.png") no-repeat center center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
