@@ -1,0 +1,214 @@
+/* Reset defaults, box-sizing to all elements, main font-family & font color*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(49, 40, 33);
+}
+
+/* Type selector for text*/
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+h4,
+h5 {
+  font-weight: 500;
+}
+nav,
+label {
+  font-weight: 400;
+}
+/* ID selector for the main title */
+#main_title {
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  color: rgb(249, 234, 224);
+  text-shadow: 3px 3px 3px rgba(64, 23, 2, 0.8);
+  background-color: rgba(255, 116, 31);
+  box-shadow: 3px 3px 3px rgba(64, 23, 2, 0.3);
+  font-size: 60px;
+}
+
+/* Attribute selector for the logo image */
+img[src*="pizza_logo"] {
+  border-radius: 20px;
+}
+
+/* Styling for the navigation menu*/
+nav {
+  background-color: bisque;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(64, 23, 2, 0.3);
+}
+/* Styling the navigation links using pseudo-class :hover, :visited & :active*/
+.navigation a:visited {
+  color: rgba(255, 116, 31);
+}
+
+.navigation a:hover {
+  color: rgba(255, 116, 31);
+}
+
+.navigation a:active {
+  font-weight: bold;
+}
+
+/*Highlights the selected input area inside the form using pseudo-class :focus */
+form input:focus,
+textarea:focus,
+select:focus {
+  background-color: rgba(255, 117, 31, 0.069);
+}
+
+/* ID selector for the order form title */
+#order_title {
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: bisque;
+  box-shadow: 3px 3px 3px rgba(64, 23, 2, 0.3);
+}
+
+/*Class selector for the order form*/
+.form {
+  background-color: bisque;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(64, 23, 2, 0.3);
+}
+/*Uses descendant combinator to change p-elements' size and weight inside the form*/
+.form p {
+  font-weight: bold;
+  font-size: 15px;
+}
+/* Owerflow & min-max constraints on the text area box */
+textarea {
+  max-height: 200px;
+  min-height: 100px;
+  max-width: 600px;
+  min-width: 300px;
+  overflow: auto;
+}
+
+/*Grays out the coupon code- box */
+input:disabled {
+  background-color: grey;
+  opacity: 0.8;
+}
+/*Style for the order button */
+input[type="submit"] {
+  background-color: rgba(255, 116, 31);
+  font-weight: bold;
+  color: bisque;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+}
+
+/*Hover element for the submit button*/
+input[type="submit"]:hover {
+  background-color: bisque;
+  color: rgba(255, 116, 31);
+  border: 2px solid rgba(255, 116, 31);
+}
+
+/*Multiple class selection to changes the style of the blockquote*/
+.italic.size-up {
+  font-style: italic;
+  font-size: 25px;
+}
+
+/*Multiple selection to text-align h2- headers, navigation- section & contact information-section*/
+h2,
+.navigation,
+.contact {
+  text-align: center;
+}
+
+/*Chaining to changes the title of contact us- section*/
+h2.contact_title {
+  font-size: 40px;
+  font-style: italic;
+}
+
+/*Uses visability:hidden to hide a second logo image */
+.hidden-source {
+  visibility: hidden;
+}
+
+/*Adds a background image of a pizza, includes opacity */
+body {
+  background-image: url("pizza_background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 95%;
+}
+/*Styling for the embeded gif*/
+embed {
+    border-radius: 10px;
+}
+/*Changes the slider icon into a pizza*/
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 250px;
+  height: 8px;
+  background: #fad997;
+  outline: none;
+  margin: 20px 0;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: url("pizza_slider.png") no-repeat center center;
+  background-size: contain;
+  border: none;
+}
+
+/*-------THE BOX MODEL--------*/
+/*Margin & padding for the main title*/
+#main_title {
+  margin: 20px;
+  padding: 35px;
+}
+/*Margin-left for the logo*/
+img[src*="pizza_logo"] {
+  margin-left: 20px;
+}
+/*Padding-top & bottom for the navigation menu + margin: auto*/
+nav {
+  padding: 20px 100px 20px 100px;
+  margin: auto 20px;
+}
+/*Margin & padding for the order form- title*/
+#order_title {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+/*Margin & padding for the form*/
+.form {
+  margin: 20px;
+  padding: 50px;
+}
+/*Margin for blockquote*/
+blockquote {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+/*Margin for the embeded element*/
+embed {
+    margin: 20px 
+}
