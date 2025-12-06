@@ -1,0 +1,39 @@
+/*navigation*/
+.navbar {
+  position: fixed;
+  top: auto;
+  z-index: 5;
+  width: 100%;
+}
+
+
+/*Carousel caption in About- section*/
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/*Margin for About -section*/
+#About {
+  margin-bottom: 50px;
+}
+
+
+/*Margin for Tea Types -section*/
+#Types {
+  margin: 50px 0px; 
+}
+
+
+/*Margin for Loose leaf or tea bag -section*/
+#leaf_bag {
+  margin: 100px auto;
+}
+
+
+/*Margin for Fun Fact -section*/
+#fun_fact {
+  margin-bottom: 50px;
+}
