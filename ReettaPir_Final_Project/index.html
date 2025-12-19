@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ocha</title>
+    <!--CDN for Bootstrap 5-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!--For external CSS-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+  </head>
+
+  <body>
+<!--Navigation menu-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img id="logo" src="images/logo.png" alt="logo" />
+        <p class="navbar-brand">お茶 OCHA</p>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="index.html"
+                aria-label="Home button"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-label="Dropdown menu for tea types"
+              >
+                Tea Types
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item nav-link"
+                    href="black.html"
+                    aria-label="Black Tea"
+                    >Black
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item nav-link"
+                    href="green.html"
+                    aria-label="Green Tea"
+                    >Green
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item nav-link"
+                    href="white.html"
+                    aria-label="White Tea"
+                    >White
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item nav-link"
+                    href="oolong.html"
+                    aria-label="Oolong Tea"
+                    >Oolong
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item nav-link"
+                    href="rooibos.html"
+                    aria-label="Rooibos Tea"
+                    >Rooibos
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item nav-link"
+                    href="herbal.html"
+                    aria-label="Herbal Tea"
+                    >Herbal
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="contact.html"
+                aria-label="Contact"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!---------------------------->
+
+<!--Header-->
+    <header id="main_title">
+        <h1>お茶 OCHA</h1>
+    </header>
+<!---------->
+
+<!--Main body-->
+    <main id="main_body">
+
+      <!--Section 1.1: About section for extra large to small screen sizes-->
+
+      <section
+        id="About"
+        class="d-flex align-items-center justify-content-center"
+      >
+        <div id="carouselExampleDark" class="carousel slide carousel-fade">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="images/about_1.jpg"
+                class="d-block w-100"
+                alt="Tea leaves in a small tea cup"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>What is tea?</h5>
+                <p>
+                  Tea is a beverage made by soaking the leaves of the
+                  <em>Camellia sinensis</em> (or <em>Aspalathus linearis</em> in
+                  the case of Rooibos tea) plant in hot or cold water.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="images/about_2.jpg"
+                class="d-block w-100"
+                alt="Hot water being poured into a tea cup"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>How is tea made?</h5>
+                <p>
+                  Depending on the type of tea, the leaves are prepared either
+                  by drying, steaming, rolling, or oxidizing. These produce the
+                  signature color, aroma, and notes associated with each tea
+                  variant.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/about_3.jpg"
+                class="d-block w-100"
+                alt="A vup of lemon tea"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Chai or Tea?</h5>
+                <p>
+                  The difference boils down to historical trading routes — the
+                  word "chai" was used in India and most of Asia, while the word
+                  "tea" was used in the West. In the West, the word "chai" often
+                  points specifically to <em>chai masala</em> — a type of tea
+                  mixed with milk and spices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!--------------------------->
+
+      <!--Section 1.2: About section for medium to extra small screen size-->
+      <section id="About_xs" class="d-block d-md-none">
+        <div class="container text-center">
+          <h5>What is tea?</h5>
+          <p>
+            Tea is a beverage made by soaking the leaves of the
+            <em>Camellia sinensis</em> (or <em>Aspalathus linearis</em> in the
+            case of Rooibos tea)plant in hot or cold water.
+          </p>
+          <h5>How is tea made?</h5>
+          <p>
+            Depending on the type of tea, the leaves are prepared either by
+            drying, steaming, rolling, or oxidizing. These produce the signature
+            color, aroma, and notes associated with each tea variant.
+          </p>
+          <h5>Chai or Tea?</h5>
+          <p>
+            The difference boils down to historical trading routes—the word
+            "chai" was used in India and most of Asia, while the word "tea" was
+            used in the West. In the West, the word "chai" often points
+            specifically to
+            <em>chai masala</em> — a type of tea mixed with milk and spices.
+          </p>
+        </div>
+      </section>
+      <!------------------------->
+
+      <!--Section 2: Tea Types -section-->
+      <section
+        id="Types"
+        class="d-flex align-items-center justify-content-center"
+      >
+        <div class="container text-center">
+          <h2 id="types_titleh2">Tea Types</h2>
+          <p id="types_titlep">Explore the fragrant world of tea.</p>
+
+          <div class="row">
+            <!--Black Tea-->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 d-flex flex-column">
+                <img
+                  src="images/black_tea.jpg"
+                  class="card-img-top"
+                  alt="A cup of black tea"
+                />
+                <div class="card-body flex-fill">
+                  <h5 class="card-title">Black Tea</h5>
+                  <p class="card-text">
+                    Distinguished by a strong flavor and reddish-brown color
+                    produced by the long oxidation process.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0 mt-auto">
+                  <a
+                    href="black.html"
+                    class="btn btn-dark"
+                    aria-label="Read more"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Green Tea-->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 d-flex flex-column">
+                <img
+                  src="images/green_tea.jpg"
+                  class="card-img-top"
+                  alt="A cup of green tea in a glass"
+                />
+                <div class="card-body flex-fill">
+                  <h5 class="card-title">Green Tea</h5>
+                  <p class="card-text">
+                    Made by quickly boiling the tea leaves after harvesting to
+                    prevent oxidation or withering. Distinguished by a mild
+                    earthy and grassy aroma as well as a greenish hue.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0 mt-auto">
+                  <a
+                    href="green.html"
+                    class="btn btn-dark"
+                    aria-label="Read more"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--White Tea-->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 d-flex flex-column">
+                <img
+                  src="images/white_tea.jpg"
+                  class="card-img-top"
+                  alt="A glass tea pot full with white tea"
+                />
+                <div class="card-body flex-fill">
+                  <h5 class="card-title">White Tea</h5>
+                  <p class="card-text">
+                    Made by using young or minimally processed tea leaves to
+                    achieve a lighter flavor and aroma. Distinguished by a
+                    yellow hue.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0 mt-auto">
+                  <a
+                    href="white.html"
+                    class="btn btn-dark"
+                    aria-label="Read more"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Oolong Tea-->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 d-flex flex-column">
+                <img
+                  src="images/oolong_tea.jpg"
+                  class="card-img-top"
+                  alt="Oolong tea being poured into a glass"
+                />
+                <div class="card-body flex-fill">
+                  <h5 class="card-title">Oolong Tea</h5>
+                  <p class="card-text">
+                    Made by oxidizing the tea leaves under direct sunlight and
+                    allowing them to wither. Flavors can range from woody and
+                    thick to light and fresh aromas.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0 mt-auto">
+                  <a
+                    href="oolong.html"
+                    class="btn btn-dark"
+                    aria-label="Read more"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Rooibos Tea-->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 d-flex flex-column">
+                <img
+                  src="images/rooibos_tea.jpg"
+                  class="card-img-top"
+                  alt="A glass of rooibos tea"
+                />
+                <div class="card-body flex-fill">
+                  <h5 class="card-title">Rooibos Tea</h5>
+                  <p class="card-text">
+                    Made by fermenting the tea leaves, which gives it a unique
+                    bright red color and a sweet nutty flavor. Rooibos tea is
+                    caffeine-free.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0 mt-auto">
+                  <a
+                    href="rooibos.html"
+                    class="btn btn-dark"
+                    aria-label="Read more"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Herbal Tea-->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 d-flex flex-column">
+                <img
+                  src="images/herbal_tea.jpg"
+                  class="card-img-top"
+                  alt="A cup of herbal tea"
+                />
+                <div class="card-body flex-fill">
+                  <h5 class="card-title">Herbal Tea</h5>
+                  <p class="card-text">
+                    Made by using herbs, plants, or spices instead of the
+                    <em>Camellia sinensis</em> plant. The taste can vary from
+                    floral to spicy to earthy aromas.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0 mt-auto">
+                  <a
+                    href="herbal.html"
+                    class="btn btn-dark"
+                    aria-label="Read more"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----------------->
+
+      <!-- Section 3: Loose leaf or tea bag -section-->
+      <section id="leaf_bag">
+        <div class="container text-center">
+          <h2>Loose leaf or tea bag</h2>
+          <p>Which one should you choose?</p>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                  aria-label="Loose leaf"
+                >
+                  Loose leaf
+                </button>
+              </h5>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Loose-leaf tea is made using the whole leaf, which allows for
+                  more infusion and depth of flavor. You might also find more
+                  variety when it comes to selection. Using loose-leaf tea can
+                  be more eco-friendly compared to bagged tea.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                  aria-label="Tea bag"
+                >
+                  Tea bag
+                </button>
+              </h5>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Tea bags are made by using small particles, which makes it
+                  cheap to both produce and buy. They are also easy to use on
+                  the go. Compared to loose-leaf tea, the flavor is milder due
+                  to the leaves not having enough room to infuse with the water.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h5 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                  aria-label="Conclusion"
+                >
+                  Conclusion
+                </button>
+              </h5>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  While longtime tea drinkers usually prefer loose-leaf tea, the
+                  preference is completely up to each individual. Personally, I
+                  enjoy tea bags due to their ease of use and preportioned
+                  sizing.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------------------->
+
+      <!--Section 4: Fun fact-->
+      <section id="fun_fact">
+        <div class="row d-block d-md-block">
+          <div class="col text-center">
+            <button
+              class="btn btn-dark"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+              aria-label="Fun fact"
+            >
+              Fun Fact!
+            </button>
+          </div>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body text-center">
+              Tea is the second most consumed beverage in the world after water
+              and contains less caffeine than coffee. Some variants also include
+              antioxidants.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------->
+    </main>
+<!---------->
+
+<!--Footer-->
+    <footer>
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+              <a
+                href="index.html"
+                class="nav-link px-2"
+                aria-label="Home button"
+                >Home
+              </a>
+            </li>
+          </ul>
+          <p class="text-center">2025 お茶 OCHA</p>
+        </footer>
+      </div>
+    </footer>
+<!-------------------------------->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
