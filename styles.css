@@ -1,0 +1,254 @@
+  /*Reset defaults and basic style for the website*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: #35271b;
+  background-color: #101110;
+  background-image: url(images/chalkboard.webp);
+  background-size: contain;
+  background-position: center;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: Yuji;
+  src: url(fonts/YujiBoku-Regular.ttf);
+}
+
+@font-face {
+  font-family: RockSalt;
+  src: url(fonts/RockSalt-Regular.ttf);
+}
+
+/*Headings and text*/
+h1, h2, h3, h4 {
+  font-family: RockSalt;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 50px auto;
+}
+
+h5, h6 {
+  font-weight: 600;
+}
+
+p {
+  text-align: center;
+}
+
+/*Main title in the index.html*/
+#main_title h1 {
+  font-family: Yuji;
+  font-size: 80px;
+  font-weight: 100;
+  color: #dccfb8;
+}
+
+/* Navbar*/
+.navbar.navbar-expand-lg {
+  background-color: #e6dfd2 !important;
+  padding-left: 20px;
+  transition: 1s;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-brand {
+  font-family: Yuji;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+#logo {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar .nav-link {
+  color: #35271b !important;
+  transition: color 0.3s ease;
+}
+
+.dropdown-menu {
+  background-color: #e6dfd2;
+}
+
+.dropdown-item {
+  padding-left: 30px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #dccfb8;
+}
+
+/*Buttons*/
+.btn,
+.btn-primary {
+  background-color: #4a3b2a;
+  color: #e6dfd2;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+.btn-primary:hover {
+  background-color: #6d563d;
+}
+
+/*Carousel*/
+.carousel-caption {
+  background-color: rgba(246, 241, 231, 0.82);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.carouselExampleDark {
+  margin: 20px;
+}
+.carousel-caption {
+  color: #35271b;
+}
+
+/*General CSS for the main body*/
+#main_body {
+  margin: 0 60px;
+}
+
+#About {
+  border: 5px solid #6d563d;
+  border-radius: 5px;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+}
+
+#About_xs {
+  background-color: #dccfb8;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+}
+
+#Types .card,
+#popular_drinks .card {
+  background-color: #ad915b;
+  border: 5px solid #6d563d;
+  padding-bottom: 20px;
+  box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.5);
+}
+
+#header_image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+#tea h5 {
+  margin-top: 50px;
+}
+
+/*Accordian*/
+.accordion .accordion-button {
+  background-color: #dccfb8;
+  color: #35271b;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.accordion-body {
+  background-color: #e6dfd2;
+}
+
+/*Section titles*/
+#types_titleh2,
+#leaf_bag h2 {
+  color: #dccfb8;
+  word-spacing: 10px;
+  margin-top: 50px;
+  line-height: 50px;
+}
+
+#types_titlep,
+#leaf_bag p {
+  background-color: #dccfb8;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+/*Fun fact -section*/
+#fun_fact {
+  margin: 40px;
+}
+
+#fun_fact .card {
+  background-color: #dccfb8;
+  margin-top: 20px;
+}
+
+#fun_fact .btn {
+  background-color: #dccfb8;
+  color: #35271b;
+}
+
+#fun_fact .btn:hover {
+  background-color: #35271b;
+  color: #dccfb8;
+}
+
+/*CSS for the different pages under Tea Types*/
+
+.tea_title h1 {
+  color: #dccfb8;
+  word-spacing: 10px;
+  line-height: 70px;
+}
+
+.tea_title img {
+  width: 100%;
+  display: block;
+  border: 5px solid #6d563d;
+}
+
+#tea {
+  background-color: #dccfb8;
+  padding: 10px 20px 50px;
+  border-radius: 5px;
+}
+
+#info {
+  background-color: #dccfb8;
+  padding: 10px;
+}
+
+/*Footer and social media links*/
+footer,
+footer a {
+  color: #dccfb8 !important;
+}
+
+#social_media_icons p {
+  color: #dccfb8;
+  padding: 10px;
+  margin: 20px 50px;
+  border-radius: 10px;
+}
+
+#social_media_icons .fa-instagram,
+#social_media_icons .fa-github {
+  text-decoration: none;
+  color: #dccfb8;
+  font-size: 35px;
+  margin: 10px;
+}
+
